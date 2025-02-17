@@ -328,7 +328,7 @@ def main(csv_path, F, T, beta):
 if __name__ == "__main__":
     # Example usage
     main(
-        csv_path="C:/Users/User/Desktop/UPF/TGF/Data/OptionsF/Opt_2025-02-14_raw1.csv",
+        csv_path="Add Path",
         F=72.85,
         T=4.0 / 52.0,
         beta=0.25
