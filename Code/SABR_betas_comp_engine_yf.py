@@ -5,9 +5,9 @@ import pandas as pd
 import math
 from scipy.optimize import least_squares
 
-###############################################################################
-# 1) Extended Hagan SABR (Unweighted)
-###############################################################################
+
+# 1) Extended Hagan SABR
+
 def sabr_hagan_black_vol_extended(alpha, beta, rho, nu, F, K, T):
     if np.isclose(F, K, atol=1e-14):
         leading = alpha / (F**(1.0 - beta))
@@ -33,9 +33,9 @@ def sabr_hagan_black_vol_extended(alpha, beta, rho, nu, F, K, T):
     sabr_vol = (alpha/denom)*(z/x_z)*correction
     return max(sabr_vol, 1e-8)
 
-###############################################################################
+
 # 2) SABR Objective (Unweighted)
-###############################################################################
+
 def sabr_objective_extended(params, beta, F, T, strikes, market_vols):
     alpha, rho, nu = params
     model_vols = [
@@ -113,7 +113,7 @@ def main(csv_path, F, T):
 if __name__ == "__main__":
     # Example for standalone testing
     main(
-        csv_path="C:/Users/User/Desktop/UPF/TGF/Data/SPY_opt_1mo_cleaned.csv",
+        csv_path="Add path",
         F=607,
         T=4.0 / 52.0
     )
