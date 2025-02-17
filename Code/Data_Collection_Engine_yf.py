@@ -55,7 +55,7 @@ def data_collection_main(ticker: str, target_days: int):
     Uses the user-provided `ticker` and `target_days` to download and save options data.
     Returns the CSV path so the pipeline can continue if needed.
     """
-    output_folder = "C:/Users/User/Desktop/UPF/TGF/Data"
+    output_folder = "Add Output folder path"
     
     # 1. Download the data
     try:
@@ -94,7 +94,7 @@ def data_collection_main(ticker: str, target_days: int):
 
 # If you want to test this file alone, you could uncomment this:
 #
-# if __name__ == "__main__":
-#     test_ticker = "SPY"
-#     test_days = 30
-#     data_collection_main(test_ticker, test_days)
+if __name__ == "__main__":
+    test_ticker = "SPY"
+    test_days = 30
+    data_collection_main(test_ticker, test_days)
