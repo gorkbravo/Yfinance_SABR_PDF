@@ -8,7 +8,7 @@ from scipy.interpolate import interp1d
 from scipy.integrate import trapezoid
 from scipy.ndimage import gaussian_filter1d
 
-def bfly_main(input_csv="C:/Users/User/Desktop/UPF/TGF/Data/SPY_opt_1mo_cleaned.csv"):
+def bfly_main(input_csv="Add input file path"):
     # 1) Load Data
     options_data = pd.read_csv(input_csv)
     calls = options_data[options_data['type'].str.lower() == 'call']
