@@ -119,7 +119,7 @@ def clean_options_data(input_file, output_file):
 
 # Optional: test block for running this file by itself
 if __name__ == "__main__":
-    test_input = "C:/Users/User/Desktop/UPF/TGF/Data/SPY_opt_1mo.csv"
+    test_input = "Add testing file"
     test_output = test_input.replace(".csv", "_cleaned.csv")
     clean_options_data(test_input, test_output)
 
